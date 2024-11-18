@@ -9,6 +9,8 @@ module.exports = {
   entry: "./src/client/index.js",
   stats: "verbose",
   output: {
+    libraryTarget: "var",
+    library: "Client",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
